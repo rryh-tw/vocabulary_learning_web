@@ -1,0 +1,5 @@
+1. dumpdata from database 
+./manage.py dumpdata verb.vocabulary > verb.json
+
+2. load csv file to database
+python3 manage.py load_csv test.csv
