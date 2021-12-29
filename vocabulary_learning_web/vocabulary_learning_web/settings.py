@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'verb.apps.VerbConfig',
+    'verb',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -1,1 +1,18 @@
-[{"model": "verb.vocabulary", "pk": 1, "fields": {"word": "1", "translation": "one"}}, {"model": "verb.vocabulary", "pk": 2, "fields": {"word": "2", "translation": "two"}}]
+[
+    {
+        "model": "verb.vocabulary",
+        "pk": 1,
+        "fields": {
+            "word": "1",
+            "translation": "one"
+        }
+    },
+    {
+        "model": "verb.vocabulary",
+        "pk": 2,
+        "fields": {
+            "word": "2",
+            "translation": "two"
+        }
+    }
+]

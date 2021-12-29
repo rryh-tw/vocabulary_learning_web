@@ -3,14 +3,21 @@ from django.http import Http404, JsonResponse, HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.template import loader
-from .models import Vocabulary
+from .models import Vocabulary, Verb, TenseCategory, Conjugaison
 
 
 
 def index(request):
     vc_list = Vocabulary.objects.all()
-    output = ', '.join([vc.word for vc in vc_list])
     template = loader.get_template('index.html')
+    context = {
+        'vc_list': vc_list,
+    }
+    return HttpResponse(template.render(context, request))
+
+def verb(request):
+    vc_list = Conjugaison.objects.all()
+    template = loader.get_template('verb.html')
     context = {
         'vc_list': vc_list,
     }

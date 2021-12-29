@@ -3,3 +3,7 @@
 
 2. load csv file to database
 python3 manage.py load_csv test.csv
+
+3. load csv file to database(verb)
+csv format : 原形(aimer),翻譯,學習次數=0,時態(Présent),aime,aimes,aime,aimons,aimez,aiment
+python3 manage.py load_csv_toVerb test.csv
